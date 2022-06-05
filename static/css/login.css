@@ -1,0 +1,58 @@
+body
+{
+    background-image: linear-gradient(to bottom right, #acf1ac, #7b7bff);
+    background-attachment: fixed;
+}
+.container
+{
+    padding-top: 15em;
+}
+.col-centered
+{
+    margin: 0 auto;
+}
+
+#loginBox
+{
+    background-color: white;
+    padding: 3em;
+    width: 380px;
+    margin: 0 auto;
+
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgb(105, 105, 105);
+}
+#loginHeader
+{
+    padding-bottom: 1em;
+    font-family: 'Unica One', cursive !important;
+}
+#loginHeader h1
+{
+    color: #7b7bff;
+    font-weight: bold;
+    font-size: 45px;
+}
+hr.break
+{
+    border-top: 1px solid #7b7bff;
+}
+
+#loginFooter
+{
+    padding: 20px 0px 0px 0px ;
+}
+
+#loginFooter > p > a
+{
+    color: #7b7bff;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Unica One', cursive !important;
+}
+
+.btn-purple
+{
+    background-color: #8bef8b  !important;
+    font-family: 'Courier Prime', monospace;
+}

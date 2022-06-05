@@ -1,0 +1,96 @@
+body
+{
+    /* background-image: linear-gradient(to bottom right, #acf1ac, #7b7bff);
+    background-attachment: fixed;*/
+
+    background-image: url('/static/images/pexels-cottonbro-5989931.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#logo
+{
+    margin-top: 5em;
+}
+
+
+
+
+/* LOGIN */
+#loginBox
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 3em;
+    width: 380px;
+    margin: 7em auto 0 auto;
+
+    border-radius: 8px;
+}
+#loginHeader
+{
+    padding-bottom: 1em;
+    font-family: 'Unica One', cursive !important;
+}
+#loginHeader h1
+{
+    color: #7b7bff;
+    font-weight: bold;
+    font-size: 45px;
+}
+hr.break
+{
+    border-top: 1px solid #7b7bff;
+}
+
+#loginFooter
+{
+    padding: 20px 0px 0px 0px ;
+}
+
+#loginFooter > p > a
+{
+    color: #7b7bff;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Unica One', cursive !important;
+}
+
+.btn-green
+{
+    background-color: #72ed72  !important;
+    font-family: 'Courier Prime', monospace;
+}
+
+.btn-new
+{
+    color: #7b7bff;
+    margin-top: -2px;
+    font-weight: bold;
+    font-family: 'Unica One', cursive ;
+    font-size: large;
+    margin: -10px;
+}
+
+.btn-new:focus
+{
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+.modal-header > h5
+{   
+    color: #7b7bff;
+    font-weight: bold;
+    font-family: 'Unica One', cursive ;
+    font-size: 45px;
+}
+
+.alert-error
+{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}

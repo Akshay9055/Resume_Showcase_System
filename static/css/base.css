@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+
+    /* background-color: rgb(224, 224, 224); */
+    background-color: rgb(156 208 215);
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px ;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.main_box
+{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    
+    padding-top: 1em;
+    /* background-color: rgb(40, 225, 250); */
+    background-color: white;
+    box-shadow: 5px -6px 10px #9b9b9b;
+
+    float: left;
+}
+
+.logo
+{
+    box-shadow: 0 10px 10px -10px grey;
+    margin-bottom: 5em;
+}
+
+.logo > img
+{
+    position: relative;
+    top: -4px;
+    left: -27px;
+}
+
+
+
+.sidebar_menu li
+{
+    padding: 1em;
+
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    -ms-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    -ms-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+}
+
+.sidebar_menu li:hover
+{
+    color: rgb(35, 196, 218);
+    background-color: rgb(235, 235, 235);
+    border-bottom: 0.1px solid grey;
+    border-left: 0.1px solid grey;
+    border-top: 0.1px solid grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.body_box
+{
+    float: right;
+    /* background-color: red; */
+    position: absolute;
+    left: 310px;
+}
+
+.signout_btn
+{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+
+    text-align: center;
+}
+
+.signout_btn svg
+{
+    display: inline;
+    
+    height: 50px;
+    width: 40px;
+
+    
+}
+
+.active
+{
+    background-color: rgb(35, 196, 218);
+    color: white;
+    font-weight: bold;
+}
+
+/* PROFILE.HTML */
+/* DETAILS */
+.container_details
+{
+    background-color: white;
+    margin: 1.5em;
+    padding: 1.5em;
+
+    width: 80vw;
+
+    height: 25vh;
+
+    box-shadow: 10px 10px 10px grey;
+}
+
+.profile-pic
+{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+
+    float: left;
+
+    /* width: 100%;
+    max-width: 150px;
+    height: auto; */
+}
+
+.details
+{
+    position: relative;
+    top: 1.5em;
+    left: 5em;
+}
+
+.details_username h2
+{
+    font-weight: bold;
+}
+
+.details_email
+{
+    font-size: 20px;
+    /* line-height: 10px; */
+    color: blue;
+}
+
+/* DOCUMENTS */
+.container_documents
+{
+    background-color: white;
+    background-color: white;
+    margin: 1.5em;
+    padding: 1.5em;
+
+    width: 80vw;
+    height: 50vh;
+
+    box-shadow: 10px 10px 10px grey;
+
+}
+
+.container_settings
+{
+    background-color: white;
+    background-color: white;
+    margin: 1.5em;
+    padding: 1.5em;
+
+    width: 80vw;
+    height: 30vh;
+
+    box-shadow: 10px 10px 10px grey;
+
+}
+
+.container_table
+{
+    background-color: white;
+    background-color: white;
+    margin: 1.5em;
+    padding: 1.5em;
+
+    width: 80vw;
+    height: 100%;
+
+    box-shadow: 10px 10px 10px grey;
+}
+
+.container_table .table
+{
+    font-size: 20px;
+}
+
+.container_profile_settings
+{
+    background-color: white;
+    background-color: white;
+    margin: 1.5em;
+    padding: 1.5em;
+
+    width: 80vw;
+    height: 100%;
+
+    box-shadow: 10px 10px 10px grey;
+}
+
+.container_help
+{
+    background-color: white;
+    background-color: white;
+    margin: 1.5em;
+    padding: 1.5em;
+
+    width: 80vw;
+    height: 100%;
+
+    box-shadow: 10px 10px 10px grey;
+}
