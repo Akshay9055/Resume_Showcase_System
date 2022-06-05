@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/signin.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+
+    <title>Sign In</title>
+</head>
+
+<body>
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissable fade show" role="alert">
+        <strong>Message:</strong> {{message}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+
+    <div class="container">
+        <div id="signinBox" class="text-center">
+
+            <!-- SIGNIN HEADER -->
+            <div id="signinHeader">
+                <h1>SIGN IN</h1>
+                <hr class="break">
+            </div>
+
+            <!-- SIGNIN BODY -->
+            <div id="signinBody">
+                <form method="POST" action="/signin">
+                    {% csrf_token %}
+                    <!-- NAME -->
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control col-sm-9 col-centered" id="name" Required>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" class="form-control col-sm-9 col-centered" id="email" Required>
+                    </div>
+
+                    <!-- PASSWORD-1 -->
+                    <div class="form-group">
+                        <label for="password1">Password</label>
+                        <input type="password" name="password1" class="form-control col-sm-9 col-centered"
+                            id="password1" Required>
+                    </div>
+
+                    <!-- PASSWORD-2 -->
+                    <div class="form-group">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" name="password2" class="form-control col-sm-9 col-centered"
+                            id="password2" Required>
+                    </div>
+
+                    <button type="submit" class="btn btn-purple">Submit</button>
+                </form>
+            </div>
+
+            <!-- SIGNIN FOOTER -->
+            <div id="signinFooter">
+                <p>Already have an account?
+                    <a href="/login">LOGIN</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

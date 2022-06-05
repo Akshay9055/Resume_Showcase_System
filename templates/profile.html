@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Dashboard{% endblock  %}
+{% block content %}
+
+
+    <!-- <h1>Welcome to your profile</h1>
+    <h2> {{user.username}} </h2>
+    <h2> {{ user.email}} </h2>
+
+    <img src="{{ user.profile.image.url }}" alt="IMAGE"> -->
+
+    <div class="container_details">
+        <img class="profile-pic" src="{{user.profile.image.url}}" alt="Profile Image">
+        
+        <div class="details">
+            <div class="details_username">
+                <h2>{{user.username}}</h2>
+            </div>
+            <div class="details_email">
+                <h4>{{user.email}}</h4>
+            </div>
+            <div class="details_branch">
+                <h4>{{user.profile.branch}}</h4>
+            </div>
+            <div class="details_bio">
+                <h4>{{user.profile.bio}}</h4>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+
+
+<div class="container_table">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Username</th>
+                <th scope="col">Bio</th>
+                <th scope="col">Branch</th>
+                <th scope="col">Resume</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for document in documents %}
+
+            <tr>
+                <td>{{document.user}}</td>
+                <td>{{document.user.profile.bio}}</td>
+                <td>{{document.user.profile.branch}}</td>
+                <td><a href="{{document.document_uploads.url}}">
+                        <button class="btn btn-primary">Open Resume</button>
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}
